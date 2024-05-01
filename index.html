@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Museum Admission" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="Niko" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favfolder/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favfolder/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favfolder/favicon-16x16.png" />
+    <link rel="manifest" href="./favfolder/site.webmanifest" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Museum Admission</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <!-- references javascript file -->
+    <script src="./js/script.js"></script>
+    <h1>Museum Admission</h1>
+    <img src="./images/slug.jpg" alt="slug" width="600" height="300" />
+    <div id="backdrop">
+      <h3>Enter your age and the day:</h3>
+      <p>
+        <!-- form to get user input for their age, as well as the day of the week through a dropdown menu, which will help determine whether they are elegible for a discount or free entry -->
+        <form action="javascript: museumAdmission()">
+          <label for="size">Order:</label>
+            <!-- dropdown menu with different days of the week as options -->
+            <select name="size" id="size">
+              <option id="size-option1">-- Choose a size --</option>
+              <option value="small">small</option>
+              <option value="medium">medium</option>
+              <option value="large">large</option>
+              <option value="xl">xl</option>
+            </select>
+          <!-- dropdown menu with different days of the week as options -->
+            <select name="toppings" id="toppings">
+              <option id="toppings-option1">-- Toppings --</option>
+              <option value="topping1">Topping1</option>
+              <option value="topping2">Topping2</option>
+              <option value="topping3">Topping3</option>
+              <option value="topping4">Topping4</option>
+              <option value="topping5">Topping5</option>
+              <option value="topping6">Topping6</option>
+            </select>
+          <input type="submit" value="Check" />
+        </form>
+      </p>
+  		<!-- Create a space where the user information will be displayed -->
+      <div id="user-info"></div>
+    </div>
+    <br>
   </body>
 </html>
