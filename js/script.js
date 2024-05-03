@@ -60,7 +60,14 @@ function orderPrice() {
     toppingSixPrice = 25;
   }
 
-  let subtotal = sizePrice + toppingOnePrice + toppingTwoPrice + toppingThreePrice + toppingFourPrice + toppingFivePrice + toppingSixPrice;
+  let side = document.getElementById("side");
+  let sidePrice = 0;
+
+  if (side.checked == true) {
+    sidePrice = 13;
+  }
+
+  let subtotal = sizePrice + toppingOnePrice + toppingTwoPrice + toppingThreePrice + toppingFourPrice + toppingFivePrice + toppingSixPrice + sidePrice;
   let tax = subtotal * 0.13;
   let total = subtotal - tax;
 
