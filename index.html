@@ -16,13 +16,13 @@
   <body>
     <!-- references javascript file -->
     <script src="./js/script.js"></script>
-    <h1>Museum Admission</h1>
+    <h1>Crayfish</h1>
     <img src="./images/slug.jpg" alt="slug" width="600" height="300" />
     <div id="backdrop">
-      <h3>Enter your age and the day:</h3>
+      <h3>Crayfish Options:</h3>
       <p>
         <!-- form to get user input for their age, as well as the day of the week through a dropdown menu, which will help determine whether they are elegible for a discount or free entry -->
-        <form action="javascript: museumAdmission()">
+        <form action="javascript: orderPrice()">
           <label for="size">Order:</label>
             <!-- dropdown menu with different days of the week as options -->
             <select name="size" id="size">
@@ -31,9 +31,10 @@
               <option value="medium">medium</option>
               <option value="large">large</option>
               <option value="xl">xl</option>
-            </select>
+            </select><br><br>
           <!-- dropdown menu with different days of the week as options -->
-            <select name="toppings" id="toppings">
+          <label for="toppings">Toppings:</label>
+            <select multiple name="toppings" id="toppings">
               <option id="toppings-option1">-- Toppings --</option>
               <option value="topping1">Topping1</option>
               <option value="topping2">Topping2</option>

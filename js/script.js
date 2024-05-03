@@ -5,45 +5,60 @@
 
 "use strict"
 //function to see what rating of movies user can watch
-function museumAdmission() {
+function orderPrice() {
 
-  // get user input and declare it as a variable for their age
+  // 
   let size = document.getElementById("size").value;
+  let noSize = document.getElementById("size-option1").value
+  let sizePrice = 0;
+
+  if (size == noSize) {
+    alert("Please select a size");
+  }
+
+  // 
+  if (size == "small") {
+    sizePrice = 0.1;
+  } else if (size == "medium") {
+    sizePrice = 0.15;
+  } else if (size == "large") {
+    sizePrice = 0.45;
+  } else if (size == "xl") {
+    sizePrice = 1;
+  }
+
   let topping = document.getElementById("toppings").value;
-  let subtotal = size + topping;
+  let toppingOnePrice = 0;
+  let toppingTwoPrice = 0;
+  let toppingThreePrice = 0;
+  let toppingFourPrice = 0;
+  let toppingFivePrice = 0;
+  let toppingSixPrice = 0;
+
+  // 
+  if (topping == "topping1") {
+    toppingOnePrice = 1;
+  }
+  if (topping == "topping2") {
+    toppingTwoPrice = 3;
+  } 
+  if (topping == "topping3") {
+    toppingThreePrice = 20;
+  }
+  if (topping == "topping4") {
+    toppingFourPrice = 30000;
+  }
+  if (topping == "topping5") {
+    toppingFivePrice = 45;
+  }
+  if (topping == "topping6") {
+    toppingSixPrice = 25;
+  }
+
+  let subtotal = sizePrice + toppingOnePrice + toppingTwoPrice + toppingThreePrice + toppingFourPrice + toppingFivePrice + toppingSixPrice;
   let tax = subtotal * 0.13;
+  let total = subtotal - tax;
 
-  // Check if size is 'small' and set it to 0.1
-  if (size === "small") {
-    size = 0.1;
-  } else if (size === "medium") {
-    size = 0.15;
-  } else if (size === "large") {
-    size = 0.45;
-  } else if (size === "xl") {
-    size = 1;
-  } else {
-    document.getElementById("user-info").innerHTML = "please select a size";
-  }
-
-  // Check if size is 'small' and set it to 0.1
-  if (topping === "topping1") {
-    topping = 1;
-  } else if (topping === "topping2") {
-    topping = 3;
-  } else if (topping === "topping3") {
-    topping = 20;
-  } else if (topping === "topping4") {
-    topping = 30000;
-  } else if (topping === "topping5") {
-    topping = 45;
-  } else if (topping === "topping6") {
-    topping = 25;
-  } else {
-    document.getElementById("user-info").innerHTML = "please select a topping";
-  }
-
-  document.getElementById("user-info").innerHTML = "Subtotal: $" + subtotal;
-  document.getElementById("user-info").innerHTML = "Tax: $" + tax;
-  document.getElementById("user-info").innerHTML = "Total: $" + subtotal - tax;
+  document.getElementById("user-info").innerHTML = "Subtotal: $" + subtotal.toFixed(2) + "<br>Tax: $" + tax.toFixed(2) + "<br>Total: $" + total.toFixed(2);
+ 
 }
