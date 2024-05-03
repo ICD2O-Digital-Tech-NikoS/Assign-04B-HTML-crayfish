@@ -27,7 +27,12 @@ function orderPrice() {
     sizePrice = 1;
   }
 
-  let topping = document.getElementById("toppings").value;
+  let toppingOne = document.getElementById("topping1");
+  let toppingTwo = document.getElementById("topping2");
+  let toppingThree = document.getElementById("topping3");
+  let toppingFour = document.getElementById("topping4");
+  let toppingFive = document.getElementById("topping5");
+  let toppingSix = document.getElementById("topping6");
   let toppingOnePrice = 0;
   let toppingTwoPrice = 0;
   let toppingThreePrice = 0;
@@ -36,22 +41,22 @@ function orderPrice() {
   let toppingSixPrice = 0;
 
   // 
-  if (topping == "topping1") {
+  if (toppingOne.checked == true) {
     toppingOnePrice = 1;
   }
-  if (topping == "topping2") {
+  if (toppingTwo.checked == true) {
     toppingTwoPrice = 3;
   } 
-  if (topping == "topping3") {
+  if (toppingThree.checked == true) {
     toppingThreePrice = 20;
   }
-  if (topping == "topping4") {
+  if (toppingFour.checked == true) {
     toppingFourPrice = 30000;
   }
-  if (topping == "topping5") {
+  if (toppingFive.checked == true) {
     toppingFivePrice = 45;
   }
-  if (topping == "topping6") {
+  if (toppingSix.checked == true) {
     toppingSixPrice = 25;
   }
 
