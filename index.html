@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html>
+  <!-- contains the meta data, author, title, favicon, links to style sheets and other important information -->
   <head>
+    <!-- meta data -->
     <meta charset="utf-8" />
-    <meta name="description" content="Museum Admission" />
+    <meta name="description" content="Cray Cray Crayfish" />
     <meta name="keywords" content="immaculata, ics2o" />
     <meta name="author" content="Niko" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./favfolder/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favfolder/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favfolder/favicon-16x16.png" />
-    <link rel="manifest" href="./favfolder/site.webmanifest" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <!-- my style sheet -->
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Museum Admission</title>
+    <!-- Google's MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Title for tab -->
+    <title>Cray Cray Crayfish</title>
   </head>
   <body>
+    <!-- mdl script file -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <!-- references javascript file -->
     <script src="./js/script.js"></script>
-    <h1>Crayfish</h1>
+    <h1>Cray Cray Crayfish</h1>
     <img src="./images/slug.jpg" alt="slug" width="600" height="300" />
     <div id="backdrop">
       <h3>Crayfish Options:</h3>
@@ -33,30 +43,34 @@
               <option value="xl">xl</option>
             </select><br><br>
           <!-- dropdown menu with different days of the week as options -->
-            <label name="toppings" id="toppings">Toppings:</label><br><br>
-              <input type="checkbox" id="topping1">
-              <label for="topping1">Topping1</label><br><br>
-              <input type="checkbox" id="topping2">
-              <label for="topping2">Topping2</label><br><br>
-              <input type="checkbox" id="topping3">
-              <label for="topping3">Topping3</label><br><br>
-              <input type="checkbox" id="topping4">
-              <label for="topping4">Topping4</label><br><br>
-              <input type="checkbox" id="topping5">
-              <label for="topping5">Topping5</label><br><br>
-              <input type="checkbox" id="topping6">
-              <label for="topping6">Topping6</label><br><br>
-            </select>
-          <input type="submit" value="Check" />
+          <label name="toppings" id="toppings">Toppings:</label><br><br>
+            <input type="checkbox" id="topping1">
+          <label for="topping1">Topping1</label><br><br>
+            <input type="checkbox" id="topping2">
+          <label for="topping2">Topping2</label><br><br>
+            <input type="checkbox" id="topping3">
+          <label for="topping3">Topping3</label><br><br>
+            <input type="checkbox" id="topping4">
+          <label for="topping4">Topping4</label><br><br>
+            <input type="checkbox" id="topping5">
+          <label for="topping5">Topping5</label><br><br>
+            <input type="checkbox" id="topping6">
+          <label for="topping6">Topping6</label><br><br>
+          <input type="submit" value="Check" /><br><br>
         </form>
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="side">
-          <input type="radio" id="no-side" class="mdl-radio__button" name="options2" value="2" checked>
-          <span class="mdl-radio__label">First</span>
-        </label>
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="side">
-          <input type="radio" id="side" class="mdl-radio__button" name="options1" value="1" checked>
-          <span class="mdl-radio__label">First</span>
-        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+        <input type="radio" id="option-1" class="mdl-radio__button" name="options1" value="1">
+        <span class="mdl-radio__label">Dirt Water</span>
+      </label>
+      <br>
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+        <input type="radio" id="option-2" class="mdl-radio__button" name="options1" value="2">
+        <span class="mdl-radio__label">Dog Water</span>
+      </label><br>
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+        <input type="radio" id="option-3" class="mdl-radio__button" name="options1" value="3">
+        <span class="mdl-radio__label">No Side</span>
+      </label>
       </p>
   		<!-- Create a space where the user information will be displayed -->
       <div id="user-info"></div>
