@@ -31,10 +31,10 @@
     <div id="backdrop">
       <h3>Crayfish Options:</h3>
       <p>
-        <!-- form to get user input for their age, as well as the day of the week through a dropdown menu, which will help determine whether they are elegible for a discount or free entry -->
+        <!-- form to get user input for the size of crayfish portion that they want, as well as the toppings to go with it -->
         <form action="javascript: orderPrice()">
           <label for="size">Order:</label>
-            <!-- dropdown menu with different days of the week as options -->
+            <!-- dropdown menu with different sizes -->
             <select name="size" id="size">
               <option id="size-option1">-- Choose a size --</option>
               <option value="small">small</option>
@@ -42,7 +42,7 @@
               <option value="large">large</option>
               <option value="xl">xl</option>
             </select><br><br>
-          <!-- dropdown menu with different days of the week as options -->
+          <!-- dropdown menu with different toppings as options -->
           <label name="toppings" id="toppings">Toppings:</label><br><br>
             <input type="checkbox" id="topping1">
           <label for="topping1">Topping1</label><br><br>
@@ -56,21 +56,22 @@
           <label for="topping5">Topping5</label><br><br>
             <input type="checkbox" id="topping6">
           <label for="topping6">Topping6</label><br><br>
+          <!-- radio buttons for the sides -->
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+            <input type="radio" id="option-1" class="mdl-radio__button" name="options1" value="1">
+            <span class="mdl-radio__label">Dirt Water</span>
+          </label>
+          <br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+            <input type="radio" id="option-2" class="mdl-radio__button" name="options1" value="2">
+            <span class="mdl-radio__label">Dog Water</span>
+          </label><br>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+            <input type="radio" id="option-3" class="mdl-radio__button" name="options1" value="3">
+            <span class="mdl-radio__label">No Side</span>
+          </label><br><br>
           <input type="submit" value="Check" /><br><br>
         </form>
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-        <input type="radio" id="option-1" class="mdl-radio__button" name="options1" value="1">
-        <span class="mdl-radio__label">Dirt Water</span>
-      </label>
-      <br>
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-        <input type="radio" id="option-2" class="mdl-radio__button" name="options1" value="2">
-        <span class="mdl-radio__label">Dog Water</span>
-      </label><br>
-      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
-        <input type="radio" id="option-3" class="mdl-radio__button" name="options1" value="3">
-        <span class="mdl-radio__label">No Side</span>
-      </label>
       </p>
   		<!-- Create a space where the user information will be displayed -->
       <div id="user-info"></div>
