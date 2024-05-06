@@ -121,7 +121,7 @@ function orderPrice() {
   // calculates tax for subtotal
   let tax = subtotal * 0.13;
   // calculates total for order
-  let total = subtotal - tax;
+  let total = subtotal + tax;
   
   // displays the order summary
   let orderSummary = "Your ordered: One " + sizeMessage + ", with " + toppingOneMessage + toppingTwoMessage + toppingThreeMessage + toppingFourMessage + toppingFiveMessage + toppingSixMessage + "on top";
