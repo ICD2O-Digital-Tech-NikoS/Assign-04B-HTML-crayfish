@@ -124,7 +124,7 @@ function orderPrice() {
   let total = subtotal + tax;
   
   // displays the order summary
-  let orderSummary = "Your ordered: One " + sizeMessage + ", with " + toppingOneMessage + toppingTwoMessage + toppingThreeMessage + toppingFourMessage + toppingFiveMessage + toppingSixMessage + "on top";
+  let orderSummary = "Your ordered: One " + sizeMessage + ", with " + toppingOneMessage + toppingTwoMessage + toppingThreeMessage + toppingFourMessage + toppingFiveMessage + toppingSixMessage + "totally non harmful nitrous oxide on top";
   
   // This part with help of AI
   // Find the index of the last comma in the orderSummary string
