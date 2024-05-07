@@ -124,17 +124,8 @@ function orderPrice() {
   let total = subtotal + tax;
   
   // displays the order summary
-  let orderSummary = "Your ordered: One " + sizeMessage + ", with " + toppingOneMessage + toppingTwoMessage + toppingThreeMessage + toppingFourMessage + toppingFiveMessage + toppingSixMessage + "totally non harmful nitrous oxide on top";
+  let orderSummary = "Your ordered: One " + sizeMessage + ", with " + toppingOneMessage + toppingTwoMessage + toppingThreeMessage + toppingFourMessage + toppingFiveMessage + toppingSixMessage + "totally non harmful nitrous oxide, and hydrochloric acid on top";
   
-  // This part with help of AI
-  // Find the index of the last comma in the orderSummary string
-  let lastIndex = orderSummary.lastIndexOf(',');
-  // Extract the part of the string before the last comma
-  let firstPart = orderSummary.substring(0, lastIndex);
-  // Extract the part of the string after the last comma
-  let secondPart = orderSummary.substring(lastIndex + 1);
-  // Concatenate the two parts to remove the last comma
-  let updatedOrderSummary = firstPart + secondPart;
 
   // stops unnecessary things from being displayed if the user does not select a size.
   if (size == noSize) {
@@ -144,6 +135,6 @@ function orderPrice() {
     tax = 0;
     total = 0;
   } else {
-    document.getElementById("user-info").innerHTML = updatedOrderSummary + dogWaterMessage + dirtWaterMessage + "<br>Subtotal: $" + subtotal.toFixed(2) + "<br>Tax: $" + tax.toFixed(2) + "<br>Total: $" + total.toFixed(2);
+    document.getElementById("user-info").innerHTML = orderSummary + dogWaterMessage + dirtWaterMessage + "<br>Subtotal: $" + subtotal.toFixed(2) + "<br>Tax: $" + tax.toFixed(2) + "<br>Total: $" + total.toFixed(2);
   }
 }
